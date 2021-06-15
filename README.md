@@ -7,11 +7,11 @@
 ## Prepare data
 1. Please use **git clone --recurse-submodules** to clone this repository and remember to follow initialization steps in coco-caption/README.md.
 2. Download the preprocessd dataset from this [link](https://drive.google.com/file/d/1nF4lSK51oki46EfAvSJCudRv8un9HSwX/view?usp=sharing) and extract it to data/.
-3. Please follow this [instruction](https://github.com/ruotianluo/self-critical.pytorch/blob/master/data/README.md#convert-from-peteanderson80s-original-file) to prepare the adaptive bottom-up features and place them under data/mscoco/. Please follow this [instruction](https://github.com/ruotianluo/self-critical.pytorch#evaluate-on-coco-test-set) to prepare the features and place them under data/cocotest/ for online test evaluation.
+3. Please follow this [instruction](https://github.com/ruotianluo/self-critical.pytorch/blob/master/data/README.md#convert-from-peteanderson80s-original-file) to prepare the **adaptive** bottom-up features and place them under data/mscoco/. Please follow this [instruction](https://github.com/ruotianluo/self-critical.pytorch#evaluate-on-coco-test-set) to prepare the features and place them under data/cocotest/ for online test evaluation.
 4. Download part checkpoints from [here](https://drive.google.com/file/d/1RLXRMpIgMQM4OGONUItW9K430atJ53OO/view?usp=sharing) and extract them to save/.
 
 ## Offline Evaluation
-To reproduce the results reported in the paper, such as SATIC(K=2, bw=1) after self-critical training, just run
+To reproduce the results, such as SATIC(K=2, bw=1) after self-critical training, just run
 
 ```
 python3 eval.py  --model  save/nsc-sat-2-from-nsc-seqkd/model-best.pth   --infos_path  save/nsc-sat-2-from-nsc-seqkd/infos_nsc-sat-2-from-nsc-seqkd-best.pkl    --batch_size  1   --beam_size   1   --id  nsc-sat-2-from-nsc-seqkd   
