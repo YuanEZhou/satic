@@ -1,4 +1,4 @@
-# Semi-Autoregressive Image Captioning
+# Semi-Autoregressive Transformer for Image Captioning
 
 ## Requirements
 - Python 3.6
