@@ -45,6 +45,12 @@ python3  train.py    --seq_per_img 5 --batch_size 10 --beam_size 1 --learning_ra
 ## Citation
 
 ```
+@article{zhou2021semi,
+  title={Semi-Autoregressive Transformer for Image Captioning},
+  author={Zhou, Yuanen and Zhang, Yong and Hu, Zhenzhen and Wang, Meng},
+  journal={arXiv preprint arXiv:2106.09436},
+  year={2021}
+}
 ```
 
 ## Acknowledgements
